@@ -241,8 +241,7 @@ int main(int argc, char** argv)
     cout << "Average tracking time per frame: " << total_time / motPairs.size() << " second(s)\n";
     cout << "Total number of tracking boxes computed: " << total_box << "\n";
     cout << "Average number of tracking boxes computed per frame: " << total_box / motPairs.size() << endl;
-
-    cout << total_box / ids.size() << endl;
+    cout << "Estimated number of tracked objects: " << total_box / ids.size() << endl;
 
     return 0;
 }
